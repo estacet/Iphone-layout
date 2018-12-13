@@ -1,0 +1,284 @@
+body {
+    background: powderblue;
+}
+
+/* Corpus */
+.iphone-block {
+    position: absolute;
+    width: 200px;
+    height: 420px;
+    border: 2px solid burlywood;
+    border-radius: 25px;
+    background-color: white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Camera-block */
+.iphone-block .Camera-block {
+    width: 100px;
+    height: 50px;
+}
+
+/* Camera */
+.iphone-block .Camera-block .front-camera {
+    position: absolute;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 14px;
+    right: 95px;
+    background-color: black;
+    border: 3px solid grey;
+}
+
+.iphone-block .Camera-block .front-camera-light {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 32px;
+    right: 125px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.iphone-block .Camera-block .front-loudspeaker {
+    position: absolute;
+    border-radius: 12px;
+    width: 34px;
+    height: 4px;
+    top: 33px;
+    right: 84px;
+    background-color: black;
+}
+
+/* Screen */
+.iphone-block .screen {
+    border: 2px solid black;
+    border-radius: 3px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 185px;
+    height: 310px;
+    background-image: url("../img/bg.jpg");
+}
+
+/* Screen: application icons */
+.iphone-block .screen .app-icon {
+    float: left;
+    position: relative;
+    border-radius: 7px;
+    width: 38px;
+    height: 38px;
+    margin: 8px 4px 16px 4px;
+}
+
+.folder {
+    background-color: white;
+}
+
+.iphone-block .screen .app-icon.folder > .app-icon i.icon-twitter {
+    color: #1da1f2;
+}
+
+.iphone-block .screen .app-icon.folder > .app-icon i.icon-telegram {
+    color: #3a6d99;
+}
+
+.iphone-block .screen .app-icon.folder > .app-icon i.icon-facebook {
+    color: #3b5998;
+}
+
+.iphone-block .screen .app-icon .notification {
+    position: absolute;
+    float: right;
+    right: -6px;
+    border-radius: 10px;
+    width: 13px;
+    height: 13px;
+    margin-top: -44px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    line-height: 13px;
+    font-family: Helvetica;
+    vertical-align: middle;
+}
+
+/* Folder */
+.iphone-block .screen .app-icon:hover {
+    transform: scale(1.1);
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.iphone-block .screen .app-icon.folder > .app-icon > .app-name {
+    display: none;
+}
+
+.iphone-block .screen > .app-icon.folder:hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 200px;
+    margin: auto 0;
+    background-color: rgb(104, 117, 128);
+    border-radius: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.iphone-block .screen .app-icon.folder:hover {
+    transform: none;
+    transition: none;
+}
+
+.iphone-block .screen .app-icon.folder:hover > .app-icon {
+    top: 0;
+    width: 38px;
+    height: 38px;
+    margin: 8px 4px 16px 4px;
+}
+
+.iphone-block .screen .app-icon.folder:hover > .app-icon [class*="icon-"] {
+    position: initial;
+    top: 0;
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.iphone-block .screen .app-icon.folder:hover > .app-icon > .app-name {
+    display: inline;
+}
+
+.iphone-block .screen .app-icon.folder > .app-icon {
+    position: relative;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    margin: 2px 1px;
+}
+
+.iphone-block .screen .app-icon.folder > .app-icon [class*="icon-"] {
+    position: absolute;
+    top: 2px;
+    font-size: 50%;
+    line-height: 10px;
+}
+
+.iphone-block .screen .app-icon [class^="icon-"] {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 26px;
+    line-height: 38px;
+    border-radius: 5px;
+}
+
+.iphone-block .screen .app-icon i.icon-facebook {
+    color: #3b5998;
+    background-color: white;
+}
+
+.iphone-block .screen .app-icon i.icon-camera {
+    color: black;
+    background: radial-gradient(circle at 33% 100%, #4776e6 40%, #8e54e9 35%, #614385);
+}
+
+.iphone-block .screen .app-icon i.icon-calendar {
+    color: white;
+    background: radial-gradient(circle at 33% 100%, #77a1d3 40%, #79cbca 20%, #e684ae 60%, #9B36B7);
+}
+
+.iphone-block .screen .app-icon i.icon-twitter {
+    color: #1da1f2;
+    background-color: white;
+}
+
+.iphone-block .screen .app-icon i.icon-music {
+    color: white;
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+}
+
+.iphone-block .screen .app-icon i.icon-photos {
+    color: white;
+    background: radial-gradient(circle at 33% 100%, #a8c0ff 25%, #3f2b96 35%, #3c1053 40% ,#ad5389);
+}
+
+.iphone-block .screen .app-icon small.app-name {
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+/* Screen: bottom menu */
+.iphone-block .screen  .bottom-menu {
+    position: absolute;
+    bottom: 0;
+    height: 54px;
+    width: 100%;
+    margin-bottom: 0;
+    background: silver;
+}
+
+.iphone-block .screen .bottom-menu .app-icon {
+    float: left;
+    position: relative;
+    border-radius: 7px;
+    background-color: white;
+    width: 38px;
+    height: 38px;
+    margin: 8px 4px 8px 4px;
+}
+
+.iphone-block .screen .bottom-menu .app-icon small.app-name {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.iphone-block .screen .bottom-menu .app-icon i.icon-telegram {
+    color: #3a6d99;
+}
+
+.iphone-block .screen .bottom-menu .app-icon i.icon-contacts {
+    color: white;
+    background: lawngreen;
+}
+
+.iphone-block .screen .bottom-menu .app-icon i.icon-message {
+    color: white;
+    background: lawngreen;
+}
+
+.iphone-block .screen .bottom-menu .app-icon i.icon-google {
+    background: white;
+}
+
+/* Button */
+.iphone-block .button {
+    position: absolute;
+    right: 80px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid burlywood;
+    width: 30px;
+    height: 30px;
+}
